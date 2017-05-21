@@ -1,4 +1,3 @@
-import baffle from './baffle';
 window.onload = function() {
 
   var charactersList = new CharactersList('http://hp-api.herokuapp.com/api/characters')
@@ -15,4 +14,3 @@ window.onload = function() {
   }
 
 }
-module.exports = baffle;
