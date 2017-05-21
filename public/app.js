@@ -1,11 +1,11 @@
 window.onload = function() {
 
   var charactersList = new CharactersList('http://hp-api.herokuapp.com/api/characters')
-  var displayCharacters = new DisplayCharacters(displayCharacterDiv)
   var displayCharacterDiv = document.querySelector('#display-facts')
-  var charactersSelect = new CharactersSelect(selectElement, charactersList)
   var selectElement = document.querySelector('#select-character')
-  
+  var displayCharacters = new DisplayCharacters(displayCharacterDiv)
+  var charactersSelect = new CharactersSelect(selectElement, charactersList)
+
   charactersList.onRequestComplete = charactersSelect.populateOptions.bind(charactersSelect)
 
   charactersList.getCharacters()
