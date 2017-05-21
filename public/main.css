@@ -1,5 +1,11 @@
 body {
-  padding-right: 45%;
-  padding-left: 45%;
-  background-color: grey;
+    background-color: grey;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 40px;git 
+}
+
+
+
+p {
+  background-image: grey;
 }
