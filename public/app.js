@@ -10,7 +10,7 @@ window.onload = function() {
 
   charactersList.pullCharacters()
   charactersSelect.onChange = function(character) {
-    displayCharacters.populatePage(character)
+    displayCharacters.Page(character)
   }
 
 }
