@@ -11,3 +11,20 @@ var CharactersSelect = function(select, charatersList){
     this.onChange(character)
   }.bind(this))
 }
+
+CharactersSelect.prototype = {
+
+  populateOptions: function(characters){
+    //Loop through the data for differecnt charactors
+    for (var i = 0; i < characters.length; i++) {
+      var option = document.createElement('option')
+      //assign values to them to populaate list..
+        option.innerText = characters[i].name
+        option.value = i.toString()
+
+      this.currentOptionIndex = i
+      this.select.appendChild(option)
+    }
+  }
+
+}
