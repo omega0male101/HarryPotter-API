@@ -7,7 +7,7 @@ var CharactersList = function (url) {
 
 CharactersList.prototype = {
 
-  retriveCharacters: function() {
+  pullCharacters: function() {
     var request = new XMLHttpRequest()
     request.open("GET", this.url)
       //Making request, then calling onload function

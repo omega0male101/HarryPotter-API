@@ -8,7 +8,7 @@ window.onload = function() {
 
   charactersList.onRequestComplete = charactersSelect.populateOptions.bind(charactersSelect)
 
-  charactersList.getCharacters()
+  charactersList.pullCharacters()
   charactersSelect.onChange = function(character) {
     displayCharacters.populatePage(character)
   }
