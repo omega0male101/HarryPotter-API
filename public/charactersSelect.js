@@ -18,6 +18,7 @@ CharactersSelect.prototype = {
     //Loop through the data for differecnt charactors
     for (var i = 0; i < characters.length; i++) {
       var option = document.createElement('option')
+      
       //assign values to them to populaate list..
         option.innerText = characters[i].name
         option.value = i.toString()
